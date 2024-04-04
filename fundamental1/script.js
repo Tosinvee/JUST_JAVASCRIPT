@@ -59,3 +59,12 @@ console.log(x)
 console.log(ageBusayo > ageShade) // >,<,<=,>=
 console.log(ageShade >= 18)
 
+//STRINGS
+const name ="shade"
+const job = "backend developer"
+const favFood = "beans and bread"
+
+console.log("i'm" + " " + name +", a " + job)
+
+//TEMPLATE Strings using backticks
+console.log(`I'm ${name}, a ${job}`)
