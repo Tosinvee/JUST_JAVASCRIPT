@@ -91,29 +91,34 @@
 // }
 
 //SWITCH STATEMEMT
-const day = 'monday'
+// const day = 'monday'
 
-switch(day){
-    case 'monday':
-        console.log('i learn javascript')
-        break;
-        case 'Tuesday':
-        console.log('sew')
-        break;
-        case 'Wednesday':
-        console.log('go for mid week service')
-        break;
-        case 'Thursday':
-        console.log('go for rehersal')
-        break;
-        case 'Friday':
-        console.log('go to the gym')
-        break;
-        case 'Saturday':
-        case 'Sunday':
-        console.log('i learn javascript')
-        break;
-        default:
-            console.log('not a valid day')
+// switch(day){
+//     case 'monday':
+//         console.log('i learn javascript')
+//         break;
+//         case 'Tuesday':
+//         console.log('sew')
+//         break;
+//         case 'Wednesday':
+//         console.log('go for mid week service')
+//         break;
+//         case 'Thursday':
+//         console.log('go for rehersal')
+//         break;
+//         case 'Friday':
+//         console.log('go to the gym')
+//         break;
+//         case 'Saturday':
+//         case 'Sunday':
+//         console.log('i learn javascript')
+//         break;
+//         default:
+//             console.log('not a valid day😂')
 
-}
+//THE CONDITIONAL (TERNARY) OPERATOR
+const age = 23
+// sage >= 18 ? console.log('i like to drink wine') : console.log('i like t water')
+
+const drink = age >= 18 ? 'wine' : 'water'
+console.log(drink)
