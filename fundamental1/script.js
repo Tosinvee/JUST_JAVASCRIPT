@@ -71,21 +71,49 @@
 
 
 //lLOGICAL OPERATORS
-const hasDriverslicense = true
-const hasGoodVision = false
+// const hasDriverslicense = true
+// const hasGoodVision = false
 
-console.log(hasDriverslicense && hasGoodVision);
-console.log(hasDriverslicense || hasGoodVision);
-console.log(!hasDriverslicense)
+// console.log(hasDriverslicense && hasGoodVision);
+// console.log(hasDriverslicense || hasGoodVision);
+// console.log(!hasDriverslicense)
 
-if(hasDriverslicense && hasGoodVision){
-    console.log('sarah is able to drive')
-}else{
-    console.log('someone else should drive')
-}
+// if(hasDriverslicense && hasGoodVision){
+//     console.log('sarah is able to drive')
+// }else{
+//     console.log('someone else should drive')
+// }
 
-if(hasDriverslicense || hasGoodVision){
-    console.log('sarah is able to drive')
-}else{
-    console.log('someone else should drive')
+// if(hasDriverslicense || hasGoodVision){
+//     console.log('sarah is able to drive')
+// }else{
+//     console.log('someone else should drive')
+// }
+
+//SWITCH STATEMEMT
+const day = 'monday'
+
+switch(day){
+    case 'monday':
+        console.log('i learn javascript')
+        break;
+        case 'Tuesday':
+        console.log('sew')
+        break;
+        case 'Wednesday':
+        console.log('go for mid week service')
+        break;
+        case 'Thursday':
+        console.log('go for rehersal')
+        break;
+        case 'Friday':
+        console.log('go to the gym')
+        break;
+        case 'Saturday':
+        case 'Sunday':
+        console.log('i learn javascript')
+        break;
+        default:
+            console.log('not a valid day')
+
 }
