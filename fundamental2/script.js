@@ -101,32 +101,59 @@
 //  console.log(mine['lastName'])//BRACKET NOTATION
 
 //OBJECT METHODS i.e any function attached to an object is calle a method
-const mine ={
-   firstNmae: 'shade',
-   lastName:'Bayode',
-   birthYear: '1997',
-   friends:['tosin','bussy','jummy'],
-   hasDriversLicense :true,
-   calcAge : function(birthYear){
-      return 2024 - birthYear
-   }
-}
-console.log(mine.calcAge(1997))// DOT NOTATION the object mine is caling the method calcage
-console.log(mine['calcAge'](1997))// BRACKET NOTATION
-// USING THIS KEYWORD
-const tosin={
-   firstName: 'shade',
-   lastName:'Bayode',
-   birthYear: '1997',
-   friends:['tosin','bussy','jummy'],
-   hasDriversLicense :true,
-   calcAge : function(){
-      return 2024 - this.birthYear
-   },
-   mySummary: function (){
-       return `${this.firstName} is a ${this.calcAge()}-years old lady and  she has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
-   }
+// const mine ={
+//    firstNmae: 'shade',
+//    lastName:'Bayode',
+//    birthYear: '1997',
+//    friends:['tosin','bussy','jummy'],
+//    hasDriversLicense :true,
+//    calcAge : function(birthYear){
+//       return 2024 - birthYear
+//    }
+// }
+// console.log(mine.calcAge(1997))// DOT NOTATION the object mine is caling the method calcage
+// console.log(mine['calcAge'](1997))// BRACKET NOTATION
+// // USING THIS KEYWORD
+// const tosin={
+//    firstName: 'shade',
+//    lastName:'Bayode',
+//    birthYear: '1997',
+//    friends:['tosin','bussy','jummy'],
+//    hasDriversLicense :true,
+//    calcAge : function(){
+//       return 2024 - this.birthYear
+//    },
+//    mySummary: function (){
+//        return `${this.firstName} is a ${this.calcAge()}-years old lady and  she has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
+//    }
    
+// }
+// console.log(tosin.calcAge())
+// console.log(tosin.mySummary())
+
+// FOR LOOP
+// for(let rep = 1; rep <=10; rep++){
+//    console.log(`lifting weight ${rep} times`)
+// }
+
+//LOOPING ARRAYS
+const mine =[
+   'shade',
+   'tosin',
+   'taiwo'
+]
+// FORWARD LOOP
+for(let i = 0; i < mine.length; i++){
+   console.log(mine[i])
 }
-console.log(tosin.calcAge())
-console.log(tosin.mySummary())
+//BACKWARD LOOP 
+for(let i = mine.length - 1; i >= 0; i--){
+   console.log(mine[i])
+}
+
+//WHILE LOOP
+let rep = 1
+while(rep <= 10){
+   console.log(`lifting weight ${rep}`)
+   rep++
+}
