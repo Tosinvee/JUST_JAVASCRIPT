@@ -77,15 +77,56 @@
 // console.log(ageA,ageB, ageC)
 
 //ARRAY METHODS
-const friends = ['shade','tosin','busayo']
-friends.push('aduke')//add element to the last array
-console.log(friends)
-friends.unshift('bussy')// add element to the first letter of an array
-console.log(friends)
-friends.pop()// deletes the last element of the array
-console.log(friends)
-friends.shift()//deletes the last elemet of the array
-console.log(friends)
-console.log(friends.indexOf('tosin'))// return the index of which tje element is located
+// const friends = ['shade','tosin','busayo']
+// friends.push('aduke')//add element to the last array
+// console.log(friends)
+// friends.unshift('bussy')// add element to the first letter of an array
+// console.log(friends)
+// friends.pop()// deletes the last element of the array
+// console.log(friends)
+// friends.shift()//deletes the last elemet of the array
+// console.log(friends)
+// console.log(friends.indexOf('tosin'))// return the index of which tje element is located
 
+ //OBJECTS
+//  const mine = {
+//     firstName:'shade',
+//     lastName:'Baayode',
+//     age:17,
+//     friends:['tosin','bussy','jummy']
+//  }
+//  console.log(mine)
  
+//  console.log(mine.lastName)//DOT NOTATION
+//  console.log(mine['lastName'])//BRACKET NOTATION
+
+//OBJECT METHODS i.e any function attached to an object is calle a method
+const mine ={
+   firstNmae: 'shade',
+   lastName:'Bayode',
+   birthYear: '1997',
+   friends:['tosin','bussy','jummy'],
+   hasDriversLicense :true,
+   calcAge : function(birthYear){
+      return 2024 - birthYear
+   }
+}
+console.log(mine.calcAge(1997))// DOT NOTATION the object mine is caling the method calcage
+console.log(mine['calcAge'](1997))// BRACKET NOTATION
+// USING THIS KEYWORD
+const tosin={
+   firstName: 'shade',
+   lastName:'Bayode',
+   birthYear: '1997',
+   friends:['tosin','bussy','jummy'],
+   hasDriversLicense :true,
+   calcAge : function(){
+      return 2024 - this.birthYear
+   },
+   mySummary: function (){
+       return `${this.firstName} is a ${this.calcAge()}-years old lady and  she has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
+   }
+   
+}
+console.log(tosin.calcAge())
+console.log(tosin.mySummary())
