@@ -24,7 +24,8 @@ const temp = main
 main = secondary
 secondary = temp
 console.log(main, secondary)
-//Recives two return value from a function
+
+//Receives two return value from a function
 console.log(resturant.order(2, 0))
 const [starter, mainCourse] = resturant.order(2, 0)
 console.log(starter, mainCourse)
