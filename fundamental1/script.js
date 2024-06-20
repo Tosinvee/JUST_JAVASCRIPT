@@ -118,7 +118,7 @@
 
 //THE CONDITIONAL (TERNARY) OPERATOR
 const age = 23
-// sage >= 18 ? console.log('i like to drink wine') : console.log('i like t water')
+// age >= 18 ? console.log('i like to drink wine') : console.log('i like t water')
 
-const drink = age >= 18 ? 'wine' : 'water'
+const drink = age >= 18 ? 'wine' : 'water'// wine will only be served for som1 who is greater than or equals 18
 console.log(drink)

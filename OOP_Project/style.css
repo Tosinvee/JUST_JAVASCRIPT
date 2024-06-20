@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color:#E88D67 
+}
+
+.container{
+    width: 30rem;
+    margin: 2rem auto;
+
+    
+}
+
+.title {
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.container .form{
+    background-color:#F3F7EC;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+.form input{
+    flex: 1;
+    padding: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.form .btn{
+    padding: 1rem;
+    background-color:#006989;
+    color: brown;
+    cursor: pointer;
+    border: none;
+
+}
+
+.lists .todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.todo span{
+    cursor: pointer;
+
+}

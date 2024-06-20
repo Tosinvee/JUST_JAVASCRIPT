@@ -35,7 +35,7 @@ const resturant = {
 //     mainIndex: 2,
 //     starterIndex: 2
 // })
-//DESTRUCTING OBJECTS
+////////////////////////DESTRUCTING OBJECTS/////////////////////////////////
 // const {name, openingHours, categories} = resturant
 // console.log(name, openingHours, categories)
 
@@ -57,7 +57,7 @@ const resturant = {
 
 
 
-///////////////////////////////////////////////////////////////////
+//////////////////////////ARRAY/////////////////////////////////////////
 // //DESTRUCTING ARRAY`
 // const arr = [1,2,3]
 
@@ -80,7 +80,7 @@ const resturant = {
 // const [starter, mainCourse] = resturant.order(2, 0)
 // console.log(starter, mainCourse)
 
-/////////////////////////////////////////////////////////////////
+//////////////////////////SPREAD OPERATOR///////////////////////////////////////
 //SPREAD OPERATOR
 // const array =[4,5,6]
 // const newArr = [1,2,3,...array]
@@ -89,26 +89,66 @@ const resturant = {
 // console.log(...newArr)// logs the individual element of the array
 
 //copy array
-const menu = [...resturant.mainMenu]
+// const menu = [...resturant.mainMenu]
 
-//Join 2 arrays
-const menuComb = [...resturant.staterMenu, ...resturant.mainMenu]
-console.log(menuComb)
+// //Join 2 arrays
+// const menuComb = [...resturant.staterMenu, ...resturant.mainMenu]
+// console.log(menuComb)
 
-//spread method on strings
-const name = 'jonas'
-const letters = [...name, ' ', 'S']
-console.log(letters)
-console.log(...name)
+// //spread method on strings
+// const name = 'jonas'
+// const letters = [...name, ' ', 'S']
+// console.log(letters)
+// console.log(...name)
 
-//REAL WORLD EXAMPLE
-//objects with spread operator
-const newResturant = {
-    foundedIn: 2008, ...resturant, founder:'Aderonke Bayode'
+// //REAL WORLD EXAMPLE
+// //objects with spread operator
+// const newResturant = {
+//     foundedIn: 2008, ...resturant, founder:'Aderonke Bayode'
+// }
+// console.log(newResturant)
+
+// const resturantCopy = {...resturant}
+// resturantCopy.name = 'IYA HANNAH ENT'
+// console.log(resturantCopy) 
+
+/////////////////////REST PATTERN///////////////////////////////////
+//DESTRUCTURING
+//SPREAD because on RIGHT side of =
+// const arr = [1,2, ...[3,4]];
+// console.log(arr)
+
+// const arrry = [1,2,3.4,5]
+// console.log(arrry)
+// //REST, because on LEFT side of =
+// const [a, b, ...others] = [1, 2, 3, 4, 5]
+// console.log(a, b, others)
+
+// const[pizza, ...otherFood] = [...resturant.mainMenu, ...resturant.staterMenu]
+// console.log(pizza, otherFood)
+
+const {sat, ...weekDays} = resturant.openingHours
+console.log( weekDays)
+
+//2) REST PARAMETERS IN FUNCTIONS
+const add = function(...numbers){
+    let sum = 0;
+    for(let i = 0; i < numbers.length; i++)sum +=
+    numbers[i]
+    console.log(sum)
+};
+add(2, 3)
+add(5, 3, 7, 2)
+add(8, 6, 7,5,1,4)
+
+const x = [23, 5, 7]
+add(...x)
+
+
+/////////////////////FOR LOOP///////////////////
+const menu = [...resturant.staterMenu, ...resturant.mainMenu]
+for(const item of menu) console.log(item)
+
+for(const [index, element] of menu.entries()){
+    console.log(`${index + 1}:${element}`)
 }
-console.log(newResturant)
-
-const resturantCopy = {...resturant}
-resturantCopy.name = 'IYA HANNAH ENT'
-console.log(resturantCopy) 
-
